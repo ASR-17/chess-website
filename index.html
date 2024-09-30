@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess.com/home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- chess.com -->
+    <section id="section-1" class="section1">
+    <div class="main">
+        <nav class="nav">
+           <div class="img">Chess.com</div>
+            <br>
+            <br>
+            <p><a href="#section-1">Play</a></p>
+            <p><a href="#section-2">Puzzle</a></p>
+            <p><a href="#section-3">Learn</a></p>
+            <p><a href="#section-4">Watch</a></p>
+            <p><a href="#section-5">Social</a></p>
+            <br>
+            <button class="nav-button" id="login-signup"><a href="Home.html"><b>Login/Sign up</b></a></button>
+            <br>
+            <button class="nav-button" ><a href="Home.html"><b>Contest</b></a></button>
+            <br>
+            <p style="font-size: 15px;display:flex;flex-direction:column" id="email-display">Your email: <span id="user-email"></span></p>
+            <br>
+            <button class="nav-button" id="sign_out-button" onclick="signOut()">Sign Out</button>
+        </nav>
+        <div class="main">
+            <figure>
+            <div class="welcome">
+                Welcome, <span id="user-name"></span>!
+            </div>
+            <img id="chess-image" src="chessboard.png" alt="white/black" height="60%" >
+            <div class="img">Start Playing Now</div>
+            </figure>
+        </div>
+        <div>
+            <h1>Play Chess Online </h1>
+            <div>
+            <h2>4,693,742 Games Today</h2>
+            <h2>176,691 Playing Now</h2>
+            </div>
+            <br>
+            <button type="button"  class="button" style="background-color: rgb(234, 156, 12);" onclick="redirectToPage('https://www.google.com')">Multiplayer Chess <br> Play Same Level Player</button>
+            <button type="button" class="button" onclick="redirectToPage('Home.html')">Play With Computer <br> Play Level Based Bots</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- puzzle -->
+    <section id="section-2" class="section2">
+        <div class="puzzle">
+            <div>
+                <div class="select-box">
+                    <h1>Solve Puzzles</h1>
+                    <br>
+                    <select id="chess-options" class="options">
+                        <option value="play">Easy</option>
+                        <option value="puzzle">Intermediate</option>
+                        <option value="learn">Experienced</option>
+                    </select>
+                    <a href="https://www.chess.com/puzzles/rated"><button id="btn">Play</button></a>
+                    <br>
+                </div>
+                <div class="magnus">
+                    <img id="magnus-charlson" src="magnus_charlson.webp" alt="magnus_charlson">
+                    <div>
+                        <p id="para"> ~ Some people think that if their opponent plays a beautiful game, it's OK to lose. I don't. You have to be merciless.</p>
+                        <p style="font-size:larger;"><b>GM</b>  - MASNUS CHARLSON</p>
+                    </div>
+                </div>
+            </div>
+            <figure style="margin-top: 60px;">
+                <img id="chess-image" src="puzzle.png" alt="white/black" height="80%" >
+                <div class="img">Daily Puzzle</div>
+            </figure>
+        </div>
+    </section >
+
+
+
+
+
+
+
+
+
+<!-- lessons -->
+<section id="section-3" class="section3">
+    <div class="lessons">
+        <figure class="teach">
+            <img src="lessons.png" alt="image" height="80%">
+            <div class="img">Today's Lessons</div>
+        </figure>
+        <div class="second">
+            <h1>Chess Lessons</h1>
+            <select id="chess-options" class="options">
+                <option value="options">Phases</option>
+                <option value="open">Openings</option>
+                <option value="middle">Middle Games</option>
+                <option value="end">End games</option>
+            </select>
+            <br>
+            <button class="butt" style="margin-top:30px;" >Start</button>
+            <div class="learn-chess">
+                <img id="icon" src="chess.webp" alt="chess.com">
+                <div>
+                    <p id="p"> ~ Chess.com lessons make it easy to learn to play, then challenge you to continue growing."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section >
+
+
+
+
+    <section id="section-4" class="section4">
+        <div class="watch">
+            <h1>What's Happening in Chess Today</h1>
+            <div class="video-container1">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/c4ClKWD3ow0?si=g0Bi4t1mg1PnV_Bl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/7UsQVEeFddM?si=hp6G2Oxbs3Eh1kJW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-container1">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/daZmwIiIlWU?si=l26aS842ewfH17iE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/kSLTw3Hvw30?si=fmdsITOxtCG45sDt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section >
+
+
+
+
+
+
+    <section id="section-5" class="section5">
+        <div class="social">
+            <h1>Chess Socials</h1>
+           <div class="social-link">
+                <div id="ele">
+                    <a href="https://www.facebook.com/chess/"><img src="facebook-icon.webp" alt="facebook" height="50px"></a>
+                    <figcaption>facebook</figcaption>
+                </div>
+                <div id="ele">
+                    <a href="https://www.instagram.com/wwwchesscom/"><img src="insta-icon.jpeg" alt="Instagram" height="50px"></a>
+                    <figcaption>Instagram</figcaption>
+                </div>
+                <div id="ele">
+                    <a href="https://www.youtube.com/user/wwwChesscom"><img src="youtube.png" alt="Youtube" height="50px"></a>
+                    <figcaption>Youtube</figcaption>
+                </div>
+                <div id="ele">
+                    <a href="https://x.com/chesscom"><img src="twitter-icon.jpeg" alt="Twitter" height="50px"></a>
+                    <figcaption>Twitter</figcaption>
+                </div>
+           </div>
+        </div>
+    </section >
+</body>
+</html>
